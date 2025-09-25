@@ -7,7 +7,11 @@ app_license = "mit"
 
 # Apps
 # ------------------
-
+doc_events={
+    "Item":{
+        "after_insert":"review_management.review_mangement.customizations.item_review.create_item_review_if_not_exists"
+    }
+}
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
