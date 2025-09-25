@@ -12,6 +12,9 @@ doc_events={
         "after_insert":"review_management.review_mangement.customizations.item_review.create_item_review_if_not_exists"
     }
 }
+after_install = "review_management.review_mangement.customizations.create_item_reviews.create_item_reviews_for_existing_items"
+
+after_migrate = "review_management.review_mangement.customizations.create_item_reviews.create_item_reviews_for_existing_items"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
