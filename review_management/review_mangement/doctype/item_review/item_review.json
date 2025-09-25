@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-24 19:22:25.120753",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "product_rating",
+  "total_reviews",
+  "review_table_section",
+  "reviews"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "product_rating",
+   "fieldtype": "Rating",
+   "label": "Product Rating",
+   "read_only": 1
+  },
+  {
+   "fieldname": "review_table_section",
+   "fieldtype": "Section Break",
+   "label": "Review Table"
+  },
+  {
+   "fieldname": "reviews",
+   "fieldtype": "Table",
+   "label": "Reviews",
+   "options": "Item Review Table"
+  },
+  {
+   "fieldname": "total_reviews",
+   "fieldtype": "Data",
+   "label": "Total Reviews",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-24 19:28:40.639968",
+ "modified_by": "Administrator",
+ "module": "Review Mangement",
+ "name": "Item Review",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
