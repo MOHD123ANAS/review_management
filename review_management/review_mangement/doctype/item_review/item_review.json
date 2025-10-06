@@ -8,6 +8,7 @@
   "item",
   "product_rating",
   "total_reviews",
+  "total_feedback",
   "review_table_section",
   "reviews"
  ],
@@ -41,6 +42,12 @@
   {
    "fieldname": "total_reviews",
    "fieldtype": "Data",
+   "label": "Total Ratings",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_feedback",
+   "fieldtype": "Data",
    "label": "Total Reviews",
    "read_only": 1
   }
@@ -48,7 +55,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-24 19:28:40.639968",
+ "modified": "2025-10-06 20:01:51.231381",
  "modified_by": "Administrator",
  "module": "Review Mangement",
  "name": "Item Review",
@@ -67,6 +74,7 @@
    "write": 1
   }
  ],
+ "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
